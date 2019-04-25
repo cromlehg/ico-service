@@ -1,0 +1,13 @@
+@(headerScripts: Html)(afterScripts: Html)(content: Html)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext)
+@landing.common.html(landing.common.head(headerScripts)) {
+  @landing.common.body {
+    @landing.common.bodyHeader()
+		@landing.common.bodyScreen()
+		<main role="main">
+			@content
+		</main>
+  } { 
+   @afterScripts
+   @Html(ac.afterPageScript)  
+  }
+}
