@@ -20,7 +20,7 @@ class AppController @Inject()(deadbolt: DeadboltActions,
 	import scala.concurrent.Future.{successful => future}
 
 	def index = deadbolt.WithAuthRequest()() { implicit request =>
-		future(Ok(views.html.app.index()))
+		future(Ok(views.html.landing.index()))
 	}
 
 	def panel = deadbolt.SubjectPresent()() { implicit request =>
