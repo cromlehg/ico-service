@@ -1,0 +1,25 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section">
+	<div class="grid grid--container">
+		<div class="section-heading section-heading--center  col-MB-60">
+			<h5 class="__subtitle">What says about Us</h5>
+			<h2 class="__title">Press About Us</h2>
+		</div>
+		<div class="review review--slider  review--style-1" data-slick='{"autoplay": true, "arrows": false, "dots": true, "speed": 1000}'>
+			@landing.components.pressSectionItem("7.png", "ava.png", "Den Miller", "CEO") {
+				“ Candlefish round stingray Reedfish giant wels, slimy sculpin beardfish anglerfish lighthousefish stream catfish. Rio Grande perch medaka rock bass ronquil squeaker southern hake northern pearleye South American Lungfish Red salmon cod icefish “
+			}
+			@landing.components.pressSectionItem("8.png", "ava_2.png", "Hanna Garcia", "Journalist") {
+				“Lionfish ronquil yellowbelly tail catfish. Temperate ocean-bass merluccid hake snake mackerel archerfish zingel, shad swordtail, cepalin alooh masu salmon herring gopher rockfish. Pacific salmon longnose lancetfish giant sea bass candlefish deepwater flathead “
+			}
+			@landing.components.pressSectionItem("7.png", "ava.png", "Den Miller", "CEO") {
+				“ Candlefish round stingray Reedfish giant wels, slimy sculpin beardfish anglerfish lighthousefish stream catfish. Rio Grande perch medaka rock bass ronquil squeaker southern hake northern pearleye South American Lungfish Red salmon cod icefish “
+			}
+			@landing.components.pressSectionItem("8.png", "ava_2.png", "Hanna Garcia", "Journalist") {
+				“Lionfish ronquil yellowbelly tail catfish. Temperate ocean-bass merluccid hake snake mackerel archerfish zingel, shad swordtail, cepalin alooh masu salmon herring gopher rockfish. Pacific salmon longnose lancetfish giant sea bass candlefish deepwater flathead “
+			}
+		</div>
+	</div>
+</section>
+

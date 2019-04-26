@@ -1,0 +1,39 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section section--no-pb section--light-blue-bg section--custom-03">
+
+	<style type="text/css">
+		.section--custom-03
+		{
+			background-image: url(@routes.Assets.versioned("images/landing/section_bg_1.png"));
+			background-position: right 20% bottom;
+			background-repeat: no-repeat;
+		}
+	</style>
+
+	<div class="grid">
+		<div class="row row--lg-reverse row--md-center">
+			<div class="col col--lg-5 col--lg-offset-1">
+				<div class="content-grid" style="margin-right: auto;max-width: 470px;">
+					<div data-aos="fade-up">
+						<div class="section-heading  col-MB-30">
+							<h5 class="__subtitle">Crowdsale wallet</h5>
+							<h2 class="__title">Crowdsale Wallet which Helps on ICO</h2>
+						</div>
+						<p class="col-MB-35">
+							Despite some naming, syntactic, and standard library similarities, JavaScript and Java are otherwise unrelated and have very different semantics.
+						</p>
+						<p>
+							<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">Free Download</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col hide--lg col-MB-40"></div>
+			<div class="col col--lg-6 col--no-gutters">
+				<img class="img-responsive" src="@routes.Assets.versioned("images/landing/wallet.jpg")" alt="demo" />
+			</div>
+		</div>
+	</div>
+
+</section>

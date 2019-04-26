@@ -1,0 +1,45 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section">
+	<div class="grid grid--container">
+		<div data-aos="fade-up" data-aos-offset="100">
+			<div class="section-heading section-heading--center  col-MB-60">
+				<h5 class="__subtitle">Our mission</h5>
+
+				<h2 class="__title">Crypterium Awesome ICO Service that Works for You!</h2>
+			</div>
+
+			<div class="row row--xs-middle">
+				<div class="col col--lg-8">
+					<p class="text--center">
+						<img class="lazy" src="@routes.Assets.versioned("images/landing/blank.gif")" data-src="@routes.Assets.versioned("images/landing/ico/ico_logo.png")" width="43" height="48" alt="demo" />
+					</p>
+
+					<p>
+						JavaScript is also used in environments that aren’t web-based, such as PDF documents, site-specific browsers, and desktop widgets. Newer and faster JavaScript virtual machines (VMs) and platforms built upon them have also increased the popularity of JavaScript for server-side web applications. On the client side, JavaScript has been traditionally implemented as an interpreted language, but more recent browsers perform just-in-time compilation.
+					</p>
+				</div>
+			</div>
+		</div>
+
+			<!-- start video -->
+		<div class="video-container" data-aos="fade-up">
+			<img class="img-responsive center-block lazy" src="@routes.Assets.versioned("images/landing/blank.gif")" data-src="@routes.Assets.versioned("images/landing/video_bg.png")" alt="demo" />
+
+			<div class="__video" style="max-width: 770px;">
+				<div class="__wrp">
+					<div class="embed-responsive">
+						<div class="__bg embed-responsive-item lazy" data-src="@routes.Assets.versioned("images/landing/video_bg_1.jpg")">
+							<div class="__btn_wrp">
+								<a class="__play-btn  circled" data-fancybox href="http://player.vimeo.com/video/44309170"></a>
+
+								<span class="__desc">Video Presentation</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- end video -->
+	</div>
+</section>

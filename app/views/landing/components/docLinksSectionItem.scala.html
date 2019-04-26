@@ -1,0 +1,8 @@
+@(title: String, delay: Int)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<div class="col col--xs-6 col--sm-auto col--md-6 col--lg-auto">
+	<a href="#" class="__document" data-aos="fade-left" data-aos-delay="@delay">
+		<i class="__ico fontello-document"></i>
+		<span class="h5">@title</span>
+	</a>
+</div>

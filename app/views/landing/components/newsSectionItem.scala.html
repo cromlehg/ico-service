@@ -1,0 +1,13 @@
+@(image: String, tag: String, article: String, descr: String, when: String)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<div class="__item __item--preview">
+	<figure class="__image">
+		<img src="@routes.Assets.versioned("images/landing/posts_img/" + image)" alt="demo" />
+	</figure>
+	<div class="__content">
+		<p class="__category"><a href="#">@tag</a></p>
+		<h3 class="__title h4"><a href="#">@article</a></h3>
+		<p class="__text">@descr</p>
+		<span class="__date-post">@when</span>
+	</div>
+</div>

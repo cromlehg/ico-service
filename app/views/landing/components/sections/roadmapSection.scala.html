@@ -1,0 +1,51 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section jarallax" data-speed="0.5">
+	<img class="jarallax-img" src="@routes.Assets.versioned("images/landing/bg_6.jpg")" alt="demo" />
+
+	<div class="grid grid--container">
+		<div class="section-heading section-heading--center section-heading--white  col-MB-60">
+			<h5 class="__subtitle">Our special way</h5>
+
+			<h2 class="__title">Crypterium Road Map</h2>
+		</div>
+
+			<!-- start timeline -->
+		<div class="timeline timeline--style-1 timeline--light-color">
+			<div class="row row--xs-middle row--no-gutters">
+				<div class="col col--xs-10">
+					<div class="row row--xs-middle row--xs-center row--no-gutters" style="min-width: 750px;">
+						@landing.components.roadmapSectionItem(false, "June 2017") {
+							Stats Center<br>Beta
+						}
+						@landing.components.roadmapSectionLine(true)
+						@landing.components.roadmapSectionItem(false, "Jule 2017") {
+							BI Intergration
+						}
+						@landing.components.roadmapSectionLine(true)
+						@landing.components.roadmapSectionItem(false, "December 2017") {
+							Fantasy<br>Prototype
+						}
+						@landing.components.roadmapSectionLine(true)
+						@landing.components.roadmapSectionItem(false, "December 2017") {
+							Tokens<br>crowdsale
+						}
+						@landing.components.roadmapSectionLine(true)
+						@landing.components.roadmapSectionItem(false, "January 2018") {
+							Blogging<br>Platform
+						}
+						@landing.components.roadmapSectionLine(false)
+						@landing.components.roadmapSectionItem(true, "April 2017") {
+							Fantasy Sports<br>with SCR
+						}
+						@landing.components.roadmapSectionLine(false)
+						@landing.components.roadmapSectionItem(false, "May 2017") {
+							Advertizing<br>System
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- end timeline -->
+	</div>
+</section>

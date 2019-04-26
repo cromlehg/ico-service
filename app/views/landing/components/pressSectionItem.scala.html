@@ -1,0 +1,15 @@
+@(image: String, avaImage: String, name: String, position: String)(content: Html)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<div class="__item">
+	<div class="__text  text--center">
+		<i class="__logo">
+			<img class="img-responsive" width="232" height="87" src="@routes.Assets.versioned("images/landing/logos_img/" + image)" alt="demo" />
+		</i>
+		<p>@content</p>
+	</div>
+	<div class="__author  text--center">
+		<img class="__author--image  center-block circled" width="78" height="78" src=""@routes.Assets.versioned("images/landing/" + avaImage)" alt="demo"/>
+		<h5 class="__author--name">@name</h5>
+		<span class="__author--position">@position</span>
+	</div>
+</div>

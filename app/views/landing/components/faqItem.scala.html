@@ -1,0 +1,11 @@
+@(title: String)(content: Html)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<div class="accordion-item">
+	<div class="accordion-toggler">
+		<h4 class="__title h5">@title</h4>
+		<i class="circled"></i>
+	</div>
+	<article>
+		<div class="__inner">@content</div>
+	</article>
+</div>

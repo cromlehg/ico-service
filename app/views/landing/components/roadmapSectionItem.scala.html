@@ -1,0 +1,7 @@
+@(current: Boolean, when: String)(what: Html)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<div class="__item __item--active @if(current) { __item--current } else { }">
+	<i class="__point"></i>
+	<span class="__text __text--first">@when</span>
+	<h5 class="__text __text--second">@what</h5>
+</div>

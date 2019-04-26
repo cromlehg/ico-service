@@ -1,0 +1,19 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section section--with-border">
+	<div class="grid grid--container">
+		<div class="section-heading section-heading--center  col-MB-60">
+			<h5 class="__subtitle">Foundation</h5>
+			<h2 class="__title">Advisors</h2>
+		</div>
+		<div class="team team--style-1">
+			<div class="__inner">
+				<div class="row">
+					@landing.components.mainTeamSectionItem("1_b.png", 100, "David Drake", "David Drake, through his family office LDJ Capital, has acted as GP & LP investors with his partners in fund-of-funds, realty funds,")
+					@landing.components.mainTeamSectionItem("2_b.png", 200, "Ann Balock", "Business development, Skolkovo Foundation. Interaction with public authorities and building partnerships with technology")
+					@landing.components.mainTeamSectionItem("3_b.png", 300, "Vladimir Nikitin", "Business development, Skolkovo Foundation. Interaction with public authorities and building partnerships with technology")
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

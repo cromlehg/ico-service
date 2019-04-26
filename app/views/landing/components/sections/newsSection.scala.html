@@ -1,0 +1,14 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section section--light-bg">
+	<div class="grid">
+		<div class="section-heading section-heading--center  col-MB-60">
+			<h2 class="__title">Latest News & Blog</h2>
+		</div>
+		<div class="posts posts--slider" data-slick='{"autoplay": true, "dots": true, "speed": 1000}'>
+			@landing.components.newsSectionItem("1.jpg", "Cryptocurrency", "New trends in UI/UX Design World Integration", "Specially for our VIP customers the LH Crypto team representatives Alexander Smirnov and Antonis Lapos will conduct a number of", "September, 15 2017")
+			@landing.components.newsSectionItem("2.jpg", "Bitcoin", "The LH-Crypto project has reached $7 000 000!", "The meetings will take place in the following cities: 15 January – Milan, 16 January – Lugano, 17 January – Zurich, 18 Jan", "September, 15 2017")
+			@landing.components.newsSectionItem("3.jpg", "ICO", "Crypto project has reached NormalCap!", "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for", "September, 15 2017")
+			@landing.components.newsSectionItem("4.jpg", "Blockchain", "Start the redemption before the ICO completion", "Lh-Crypto project buys 10% of the total amount of LHC tokens sold at a double rate. Thus, even now, project investors can receive an", "September, 15 2017")
+	</div>
+</section>

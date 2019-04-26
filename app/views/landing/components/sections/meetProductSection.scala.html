@@ -1,0 +1,20 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section">
+	<div class="grid grid--container">
+		<div class="section-heading section-heading--center  col-MB-60">
+			<h5 class="__subtitle">MEET THE PRODUCT</h5>
+
+			<h2 class="__title">Beautiful, functional and nearly ready to launch</h2>
+		</div>
+		<div class="feature feature--style-2  text--center">
+			<div class="__inner">
+				<div class="row">
+					@landing.components.featureItem("Mobile App", "Our popular wallet works on your Android or iPhone in addition to your web browser." ,"feature_img/1_1.png")
+					@landing.components.featureItem("Insurance Protection", "Digital currency stored on our servers is covered by our insurance policy.", "feature_img/2_1.png")
+					@landing.components.featureItem("Secure Storage", "We store the vast majority of the digital assets in secure offline storage.", "feature_img/3_1.png")
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

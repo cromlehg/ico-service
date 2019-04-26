@@ -1,0 +1,16 @@
+@(image: String, delay: Int, name: String, descr: String)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<div class="col col--xs-6 col--sm-4 col--md-3 col--lg-2">
+	<div class="__item  text--center" data-aos="zoom-in" data-aos-offset="50" data-aos-duration="300" data-aos-delay="@delay">
+		<figure class="__image  center-block circled">
+			<img class="img-responsive circled lazy" src="@routes.Assets.versioned("images/landing/blank.gif")" data-src="@routes.Assets.versioned("images/landing/team_img/" + image)" width="110" height="110" alt="demo" />
+			<div class="social-btns">
+				<a class="fontello-linkedin  circled" href="#"></a>
+			</div>
+		</figure>
+		<div class="__content">
+			<h5 class="__title">@name</h5>
+			<span class="__subtitle">@descr</span>
+		</div>
+	</div>
+</div>

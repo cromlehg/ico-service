@@ -1,4 +1,4 @@
-@(headerScripts: Html)(afterScripts: Html)(content: Html)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext)
+@(headerScripts: Html)(content: Html)(afterScripts: Html)(implicit flash: Flash, messages: Messages, ac: controllers.AppContext)
 @landing.common.html(landing.common.head(headerScripts)) {
   @landing.common.body {
     @landing.common.bodyHeader()
@@ -6,6 +6,10 @@
 		<main role="main">
 			@content
 		</main>
+		@landing.common.footer()
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+		</div>
   } { 
    @afterScripts
    @Html(ac.afterPageScript)  

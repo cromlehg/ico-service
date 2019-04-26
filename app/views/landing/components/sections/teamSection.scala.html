@@ -1,0 +1,30 @@
+@()(implicit flash: Flash, messages: Messages, ac: controllers.AppContext, req: play.api.mvc.RequestHeader)
+
+<section class="section jarallax" data-speed="0.3">
+	<img class="jarallax-img" src="@routes.Assets.versioned("images/landing/bg_4.jpg")" alt="demo" />
+	<div class="grid grid--container">
+		<div class="section-heading section-heading--center section-heading--white  col-MB-60">
+			<h5 class="__subtitle">Our brain</h5>
+			<h2 class="__title">Awesome Team</h2>
+		</div>
+		<div class="team team--style-2 team--light-color">
+			<div class="__inner">
+				<div class="row">
+					@landing.components.mainTeamSectionItem("1.png", 50, "David Drake", "UI Designer")
+					@landing.components.mainTeamSectionItem("2.png", 100, "Allan Bellor", "Analitics")
+					@landing.components.mainTeamSectionItem("3.png", 150, "Joe Doe", "Tech Operation")
+					@landing.components.mainTeamSectionItem("4.png", 200, "Sam Tolder", "CEO")
+					@landing.components.mainTeamSectionItem("5.png", 250, "Henry Polar", "SEO Specialist")
+					@landing.components.mainTeamSectionItem("6.png", 300, "Sandra Pen", "Humar Resources")
+					@landing.components.mainTeamSectionItem("7.png", 350, "Den Miller", "Economist")
+					@landing.components.mainTeamSectionItem("8.png", 400, "Brawn Lee", "Journalist")
+					@landing.components.mainTeamSectionItem("9.png", 450, "Linda Gampton", "UX Team Lead")
+					@landing.components.mainTeamSectionItem("10.png", 500, "John Smith", "General Director")
+					@landing.components.mainTeamSectionItem("11.png", 550, "Sam Oldrich", "Manager")
+					@landing.components.mainTeamSectionItem("12.png", 600, "Denis Portlen", "Programmer")
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
